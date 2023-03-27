@@ -176,6 +176,7 @@ public class Book implements IBook,Comparable<Book>{
         for (Book book:listBook) {
             if (book.bookName.equals(search)){
                 book.displayData();
+                return;
             }
         }
         System.out.println("không có sách cần tìm");
